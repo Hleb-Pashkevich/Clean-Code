@@ -51,8 +51,8 @@ describe('My Test', () => {
     });
 
 
-    it('test 3', () => {
-        console.log("TEST testGetPassengerPlaneWithMaxCapacity started!");
+    it('Get Passenger Plane With Max Capacity', () => {
+        console.log("TEST test started!");
         let airport = new Airport(planes);
         airport.sortByMaxLoadCapacity();
         let planesSortedByMaxLoadCapacity = airport.getPlanes();
