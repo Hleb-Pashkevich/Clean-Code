@@ -41,7 +41,7 @@ describe('My Test', () => {
                 break;
             }
         }
-        assert.equal(flag,true);
+        assert.equal(flag,false);
     });
 
     it('should check passenger plane with max capacity', () => {
