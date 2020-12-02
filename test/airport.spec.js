@@ -9,7 +9,7 @@ const experimentalPlane = require('../Planes/experimentalPlane');
 const ExperimentalTypes = require('../models/ExperimentalTypes');
 const ClassificationLevel = require('../models/ClassificationLevel');
 
-describe('Plane With Max Passenger Capacity', () => {
+describe('Plane with max passenger capacity', () => {
 
     let planes = [
         new PassengerPlane('Boeing-737', 900, 12000, 60500, 164),
@@ -31,7 +31,7 @@ describe('Plane With Max Passenger Capacity', () => {
     ];
     let planeWithMaxPassengerCapacity = new PassengerPlane('Boeing-747', 980, 16100, 70500, 242);
 
-    it('should have military Planes with transport type', () => {
+    it('Should have military planes with transport type', () => {
         let airport = new Airport(planes);
         let transportMilitaryPlanes = airport.getTransportMilitaryPlanes();
         let flag = false;
@@ -44,14 +44,14 @@ describe('Plane With Max Passenger Capacity', () => {
         assert.equal(flag,false);
     });
 
-    it('should check passenger plane with max capacity', () => {
+    it('Should check passenger plane with max capacity', () => {
         let airport = new Airport(planes);
         let expectedPlaneWithMaxPassengersCapacity = airport.getPassengerPlaneWithMaxPassengersCapacity();
         assert.isFalse( expectedPlaneWithMaxPassengersCapacity == planeWithMaxPassengerCapacity);
     });
 
 
-    it('Get Passenger Plane With Max Capacity', () => {
+    it('Get passenger plane with max capacity', () => {
         let airport = new Airport(planes);
         airport.sortByMaxLoadCapacity();
         let planesSortedByMaxLoadCapacity = airport.getPlanes();
@@ -67,7 +67,7 @@ describe('Plane With Max Passenger Capacity', () => {
         assert.isTrue(nextPlaneMaxLoadCapacityIsHigherThanCurrent);
     })
 
-    it('testHasAtLeastOneBomberInMilitaryPlanes', () => {
+    it('Has at least one bomber in military planes', () => {
         let airport = new Airport(planes);
         let bomberMilitaryPlanes  = airport.getBomberMilitaryPlanes ();
         let flag = false;
@@ -83,7 +83,7 @@ describe('Plane With Max Passenger Capacity', () => {
         // if not failed;
     })
 
-    it('should check that experimentsl planes has classification level higher than unclassified', () => {
+    it('Should check that experimental planes has classification level higher than unclassified', () => {
         let airport = new Airport(planes);
         let bomberMilitaryPlanes  = airport.getExperimentalPlanes ();
         let hasUnclassifiedPlanes  = false;
