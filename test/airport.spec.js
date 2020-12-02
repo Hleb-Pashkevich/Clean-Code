@@ -9,7 +9,7 @@ const experimentalPlane = require('../Planes/experimentalPlane');
 const ExperimentalTypes = require('../models/ExperimentalTypes');
 const ClassificationLevel = require('../models/ClassificationLevel');
 
-describe('My Test', () => {
+describe('Plane With Max Passenger Capacity', () => {
 
     let planes = [
         new PassengerPlane('Boeing-737', 900, 12000, 60500, 164),
