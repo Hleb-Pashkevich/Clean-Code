@@ -1,6 +1,6 @@
 const assert = require('chai').assert;
 
-const Plane = require('../Planes/plane');
+ 
 const MilitaryPlane = require('../Planes/militaryPlane');
 const PassengerPlane = require('../Planes/passengerPlane');
 const Airport = require('../airport');
