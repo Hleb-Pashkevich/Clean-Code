@@ -44,6 +44,7 @@ describe('Plane with max passenger capacity', () => {
         assert.equal(flag,false);
     });
 
+
     it('Should check passenger plane with max capacity', () => {
         let airport = new Airport(planes);
         let expectedPlaneWithMaxPassengersCapacity = airport.getPassengerPlaneWithMaxPassengersCapacity();
