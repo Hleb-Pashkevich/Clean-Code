@@ -1,4 +1,4 @@
-const Plane = require('./Plane');
+const Plane = require('./plane');
 
 class experimentalPlane   extends Plane
 {
