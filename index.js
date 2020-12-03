@@ -10,7 +10,7 @@ const ClassificationLevel = require('./models/ClassificationLevel');
 (function run() {
 
     let planes = [
-        new PassengerPlane({model:'Boeing-737', 900, 12000, 60500, 164}),
+        new PassengerPlane('Boeing-737', 900, 12000, 60500, 164),
         new PassengerPlane('Boeing-737-800', 940, 12300, 63870, 192),
         new PassengerPlane('Boeing-747', 980, 16100, 70500, 242),
         new PassengerPlane('Airbus A320', 930, 11800, 65500, 188),

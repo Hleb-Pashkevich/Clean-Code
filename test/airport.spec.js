@@ -34,14 +34,7 @@ describe('Plane with max passenger capacity', () => {
     it('Should have military planes with transport type', () => {
         let airport = new Airport(planes);
         let transportMilitaryPlanes = airport.getTransportMilitaryPlanes();
-        let flag = false;
-        for (let militaryPlane of transportMilitaryPlanes) {
-            if (militaryPlane.getMilitaryType() === MilitaryType.TYPE_TRANSPORT) {
-                flag = true;
-                break;
-            }
-        }
-        assert.equal(flag,false);
+        assert.isFalse(transportMilitaryPlanes.includes(plane => plane.getMilitaryType() !=MilitaryType.TRANSPORT));
     });
 
 
